@@ -25,7 +25,6 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="myapp"/>
-        <data android:scheme="com.ohmsl.client"/>
         <data android:scheme="com.ohmsl.congregationscheduler"/>
       </intent-filter>
     </activity>
