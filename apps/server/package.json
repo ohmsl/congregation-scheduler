@@ -1,0 +1,9 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "go run ./cmd/main.go serve",
+    "build": "go build -o ./dist/server ./cmd/main.go"
+  }
+}

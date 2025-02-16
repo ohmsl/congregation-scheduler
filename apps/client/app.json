@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "client",
-    "slug": "client",
+    "name": "Congregation Scheduler",
+    "slug": "congregation-scheduler",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,14 +10,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ohmsl.client"
+      "bundleIdentifier": "com.ohmsl.congregationscheduler"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ohmsl.client"
+      "package": "com.ohmsl.congregationscheduler"
     },
     "web": {
       "bundler": "metro",
