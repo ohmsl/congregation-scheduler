@@ -10,7 +10,8 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ohmsl.congregationscheduler"
+      "bundleIdentifier": "com.ohmsl.congregationscheduler",
+      "appleTeamId": "94VGQAKTXC"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,7 +35,16 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/geist/dist/fonts/geist-sans/Geist-Variable.ttf"
+          ]
+        }
+      ],
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true

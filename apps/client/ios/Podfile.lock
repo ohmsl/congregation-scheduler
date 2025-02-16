@@ -21,6 +21,8 @@ PODS:
     - ExpoModulesCore
   - ExpoLinking (7.0.5):
     - ExpoModulesCore
+  - ExpoLocalization (16.0.1):
+    - ExpoModulesCore
   - ExpoModulesCore (2.2.2):
     - DoubleConversion
     - glog
@@ -1816,6 +1818,7 @@ DEPENDENCIES:
   - "ExpoHead (from `../../../node_modules/.pnpm/expo-router@4.0.17_expo-constants@17.0.6_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7._eigfnrvoqx6ugauba4luwypn7m/node_modules/expo-router/ios`)"
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - "ExpoLinking (from `../../../node_modules/.pnpm/expo-linking@7.0.5_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+core@7.26._oaixexc2pdwrj2gg2r3wbeknqy/node_modules/expo-linking/ios`)"
+  - "ExpoLocalization (from `../../../node_modules/.pnpm/expo-localization@16.0.1_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+core_dt7bonbk4hq6q6bpzbx3qxdqbu/node_modules/expo-localization/ios`)"
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
   - "ExpoSplashScreen (from `../../../node_modules/.pnpm/expo-splash-screen@0.29.22_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+co_55wyvyyccniflgyu2vd5lk6yqe/node_modules/expo-splash-screen/ios`)"
   - "ExpoSymbols (from `../../../node_modules/.pnpm/expo-symbols@0.2.2_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+core@7.26._l4pxv7hn3kqv7hc7yuccus63bi/node_modules/expo-symbols/ios`)"
@@ -1919,6 +1922,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-keep-awake/ios"
   ExpoLinking:
     :path: "../../../node_modules/.pnpm/expo-linking@7.0.5_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+core@7.26._oaixexc2pdwrj2gg2r3wbeknqy/node_modules/expo-linking/ios"
+  ExpoLocalization:
+    :path: "../../../node_modules/.pnpm/expo-localization@16.0.1_expo@52.0.35_@babel+core@7.26.9_@babel+preset-env@7.26.9_@babel+core_dt7bonbk4hq6q6bpzbx3qxdqbu/node_modules/expo-localization/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core"
   ExpoSplashScreen:
@@ -2076,6 +2081,7 @@ SPEC CHECKSUMS:
   ExpoHead: 5d1c5c20e3933db5d9ca349424cb3b9a4a84b706
   ExpoKeepAwake: 62ff49bbc3bff90d8ee28329190f9ba371bf88e7
   ExpoLinking: 8d12bee174ba0cdf31239706578e29e74a417402
+  ExpoLocalization: 7776ea3bdb112125390745bbaf919b734b2ad1c7
   ExpoModulesCore: 7f5e59799b89e5fad1d7cc6070744c1003ca320f
   ExpoSplashScreen: 0f281e3c2ded4757d2309276c682d023c6299c77
   ExpoSymbols: f3002db15156cd4e505c77b6ea1df5c984db9965
