@@ -1,11 +1,19 @@
-import { IconButton } from "@ohmsl/ui";
-import { ScrollView, StyleSheet } from "react-native";
+import { Button, LabeledInput, ListItem, Typography } from "@/components/ui";
+import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <ScrollView>
-      <IconButton />
-    </ScrollView>
+    <SafeAreaView>
+      <ScrollView style={{ padding: 16 }}>
+        <Button>Click Me</Button>
+        <LabeledInput label="Email" placeholder="Enter your email" />
+        <ListItem>
+          <Typography variant="body2" style={{ color: "red" }}>
+            Item 1
+          </Typography>
+        </ListItem>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
