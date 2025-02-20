@@ -1,16 +1,14 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider as RNThemeProvider,
-} from "@react-navigation/native";
+import { ThemeProvider as NavThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { createNavTheme } from "@/styles/creators/createNavTheme";
 import { ThemeProvider } from "@/styles/ThemeProvider";
-import { createTheme } from "@/styles/creators";
+import { dark } from "@/themes/dark";
+import { light } from "@/themes/light";
 import { useEffect } from "react";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -31,26 +29,18 @@ export default function RootLayout() {
   // }
 
   return (
-    <RNThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <ThemeProvider
-        theme={createTheme({
-          palette: {
-            primary: {
-              main: "#007aff",
-              light: "#80bfff",
-              dark: "#004080",
-              contrastText: "#fff",
-            },
-          },
-          shape: { borderRadius: 8 },
-        })}
-      >
+    <NavThemeProvider
+      value={
+        colorScheme === "dark" ? createNavTheme(dark) : createNavTheme(light)
+      }
+    >
+      <ThemeProvider theme={colorScheme === "dark" ? dark : light}>
         <Stack>
           <Stack.Screen name="(views)" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
       </ThemeProvider>
       <StatusBar style="auto" />
-    </RNThemeProvider>
+    </NavThemeProvider>
   );
 }

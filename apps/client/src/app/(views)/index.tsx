@@ -1,10 +1,18 @@
 import { Button, LabeledInput, ListItem, Typography } from "@/components/ui";
+import { useTheme } from "@/hooks/useTheme";
 import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
+  const theme = useTheme();
+
   return (
     <SafeAreaView>
-      <ScrollView style={{ padding: 16 }}>
+      <ScrollView
+        style={{
+          padding: 16,
+          backgroundColor: theme.palette.background.default,
+        }}
+      >
         <Button>Click Me</Button>
         <LabeledInput label="Email" placeholder="Enter your email" />
         <ListItem>
