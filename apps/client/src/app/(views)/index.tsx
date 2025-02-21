@@ -1,5 +1,5 @@
-import { Button, LabeledInput, ListItem, Typography } from "@/components/ui";
 import { useTheme } from "@/hooks/useTheme";
+import { TodaysEvents } from "@/modules/home/TodaysEvents";
 import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
@@ -13,13 +13,7 @@ export default function HomeScreen() {
           backgroundColor: theme.palette.background.default,
         }}
       >
-        <Button>Click Me</Button>
-        <LabeledInput label="Email" placeholder="Enter your email" />
-        <ListItem>
-          <Typography variant="body2" style={{ color: "red" }}>
-            Item 1
-          </Typography>
-        </ListItem>
+        <TodaysEvents />
       </ScrollView>
     </SafeAreaView>
   );

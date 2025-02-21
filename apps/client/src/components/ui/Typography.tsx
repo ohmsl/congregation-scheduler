@@ -14,6 +14,7 @@ export function Typography({
   color,
   fontWeight,
   style,
+  children,
   ...rest
 }: ThemedTextProps) {
   const theme = useTheme();
@@ -34,6 +35,8 @@ export function Typography({
         style,
       ]}
       {...rest}
-    />
+    >
+      {children}
+    </Text>
   );
 }
